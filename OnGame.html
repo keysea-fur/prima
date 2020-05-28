@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Game</title>
+    <link rel="stylesheet" href="css/style-games.css">
+    <link rel="icon" href="images/logo_icon.ico">
+</head>
+
+<body onload="appearTheme();">
+
+    <div class="logo">
+        <a href="index.html"><img src="images/games/primaLogowhite.png" alt="logo-prima-games" class="img-logo"></a>
+    </div>
+
+    <div class="homepage-btns">
+
+        <div class="div-games-curr">
+            <img src="images/games/gamesbtn.png" alt="games-button-img" id="no-hover-gamesbtn">
+        </div>
+
+        <div class="div-games-curr">
+            <a href="Curriculum.html"><img src="images/games/currbtn.png" alt="curriculum-button-img" class="btn-align-web-page"></a>
+        </div>
+
+        <div class="work">
+            <a href="Worksheet.html"><img src="images/games/workbtn.png" alt="worksheets-button-img" id="workbtn" class="btn-align-web-page"></a>
+        </div>
+
+    </div>
+    <div class="container">
+
+        <img class="console-img" src="" alt="console-background">
+
+        <div id="image-move" class="upper-console-set-up">
+
+        </div>
+
+        <div id="game-finish">
+            <p>Your have traveled
+                <br> 20 km</p>
+        </div>
+
+        <div id="top-settings" class="upper-console-set-up">
+            <div id="game-sound" class="upper-settings-left">
+            </div>
+
+            <div id="how-to-play" class="upper-settings-left">
+            </div>
+
+            <div id="live1" class="lives">
+            </div>
+            <div id="live2" class="lives">
+            </div>
+            <div id="live3" class="lives">
+            </div>
+        </div>
+
+        <div id="score-board">
+            <span id="current-score-value">0</span>
+        </div>
+
+        <div id="correct" class="signal-correct-wrong">
+
+        </div>
+
+        <div id="wrong" class="signal-correct-wrong">
+
+        </div>
+
+        <div id="question">
+
+        </div>
+
+        <div id="choices">
+            <div id="box1" class="box" onClick="boxButtonChecker(1);"></div>
+            <div id="box2" class="box" onClick="boxButtonChecker(2);"></div>
+            <div id="box3" class="box" onClick="boxButtonChecker(3);"></div>
+            <div id="box4" class="box" onClick="boxButtonChecker(4);"></div>
+        </div>
+
+        <div id="button-start-reset">
+
+        </div>
+
+        <div id="time">
+            <span id="current-time-value">60</span>
+        </div>
+
+        <img id="instruction-game" src="">
+
+
+    </div>
+
+    <footer>
+        <div class="bottom-menu">
+            <a href="GamesOption.html"><label class="color-label">Games</label></a>
+            <a href="Curriculum.html"><label class="color-label">Curriculum</label></a>
+            <a href="Worksheet.html"><label class="color-label">Worksheets</label></a>
+            <a href="AboutUs.html"><label class="color-label">About Us</label></a>
+            <a href="Feedback.html"><label class="color-label">Feedback</label></a>
+        </div>
+
+        <div class="prima">
+            <img src="images/games/primafooter.png" alt="PriMa-Games-Name-Logo" class="footerprima">
+        </div>
+
+    </footer>
+    <script src="js/game-fucntion.js"></script>
+
+</body>
+
+</html>

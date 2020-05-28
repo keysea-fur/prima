@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Curriculum</title>
+    <link rel="stylesheet" href="css/style-user.css">
+    <link rel="icon" href="images/logo_icon.ico">
+    <script src="js/file-set-up.js"></script>
+</head>
+
+<body style="background-image: url('images/currculum/Curriculumbg.png') " onload="choosePage()">
+
+    <div class="logo">
+        <a href="index.html"><img src="images/currculum/logo.png" alt="logo-prima-games" class="img-logo"></a>
+    </div>
+
+    <div class="homepage-btns">
+        <div class="games">
+            <a href="GamesOption.html"><img src="images/currculum/gamesbtn.png" alt="games-button-img" class="gamesbtn" id="hovers-btn"></a>
+        </div>
+
+        <div class="curr">
+            <img src="images/currculum/Curriculumbtn.png" alt="curriculum-button-img" class="currbtn" id="currbtn">
+        </div>
+
+        <div class="work">
+            <a href="Worksheet.html"><img src="images/currculum/workbtn.png" alt="worksheets-button-img" class="workbtn" id="hovers-btn"></a>
+        </div>
+
+    </div>
+
+    <div class="Levels">
+        <div class="choose">
+            <img src="images/currculum/chooselevel.png" alt="Choose-Level-img" class="chooselbl">
+        </div>
+
+        <div class="row1">
+            <div class="LevelK">
+                <img src="images/currculum/worklevelK.png" alt="Kinder-button" class="Kbtn" id="hovers-btn" onClick="chooseGrade('Kinder')">
+            </div>
+
+            <div class="Level1">
+                <img src="images/currculum/worklevelG2.png" alt="Grade-2-button" class="G2btn" id="hovers-btn" onClick="chooseGrade('Grade2')">
+            </div>
+        </div>
+
+        <div class="row2">
+            <div class="Level2">
+                <img src="images/currculum/worklevelG1.png" alt="Grade-1-button" class="G1btn" id="hovers-btn" onClick="chooseGrade('Grade1')">
+            </div>
+            <div class="Level3">
+                <img src="images/currculum/worklevelG3.png" alt="Grade-3-button" class="G3btn" id="hovers-btn" onClick="chooseGrade('Grade3')">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="curriculum-proper">
+        <img src="" alt="label-grade-level-img-tag" id="image-tag-curriculum">
+
+        <div id="description-curriculum">
+
+        </div>
+
+        <img src="" alt="download-button" id="button-download-curriculum" onclick="downloadCurriculumPDF()">
+    </div>
+
+
+    <footer>
+        <div class="bottom-menu">
+            <a href="GamesOption.html"><label>Games</label></a>
+            <a href="Curriculum.html"><label>Curriculum</label></a>
+            <a href="Worksheet.html"><label>Worksheets</label></a>
+            <a href="AboutUs.html"><label>About Us</label></a>
+            <a href="Feedback.html"><label>Feedback</label></a>
+        </div>
+
+        <div class="copyright-curriculum-worksheet">
+            <p class="copyright-text-curriculum-worksheet">
+                Copyrights Reserved 2020
+            </p>
+        </div>
+
+        <div class="prima-curriculum-worksheet">
+            <img src="images/currculum/primafooter.png" alt="PriMa-Games-Name-Logo" class="footerprima-curriculum-worksheet">
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

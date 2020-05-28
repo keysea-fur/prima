@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Worksheets</title>
+    <link rel="stylesheet" href="css/style-user.css">
+    <link rel="icon" href="images/logo_icon.ico">
+    <script src="js/file-set-up.js"></script>
+</head>
+
+<body style=" background-image: url('images/worksheets/Worksheetsbg.png') " onload="choosePage()">
+
+    <div class="logo">
+        <a href="index.html"><img src="images/worksheets/logo.png" alt="logo-prima-games" class="img-logo"></a>
+    </div>
+
+    <div class="homepage-btns">
+        <div class="games">
+            <a href="GamesOption.html"><img src="images/worksheets/gamesbtn.png" alt="games-button-img" class="gamesbtn" id="hovers-btn"></a>
+        </div>
+
+        <div class="curr">
+            <a href="Curriculum.html"><img src="images/worksheets/currbtn.png" alt="curriculum-button-img" class="currbtn" id="hovers-btn"></a>
+        </div>
+
+        <div class="work">
+            <img src="images/worksheets/worksheetsbtn.png" alt="worksheets-button-img" class="workbtn">
+        </div>
+
+    </div>
+
+    <div class="Levels">
+        <div class="choose">
+            <img src="images/currculum/chooselevel.png" alt="Choose-Level-img" class="chooselbl">
+        </div>
+
+        <div class="row1">
+            <div class="LevelK">
+                <img src="images/currculum/worklevelK.png" alt="Kinder-button" class="Kbtn" onClick="chooseGrade('Kinder')" id="hovers-btn">
+            </div>
+
+            <div class="Level1">
+                <img src="images/currculum/worklevelG2.png" alt="Grade-2-button" class="G2btn" onClick="chooseGrade('Grade2')" id="hovers-btn">
+            </div>
+        </div>
+
+        <div class="row2">
+            <div class="Level2">
+                <img src="images/currculum/worklevelG1.png" alt="Grade-1-button" class="G1btn" onClick="chooseGrade('Grade1')" id="hovers-btn">
+            </div>
+            <div class="Level3">
+                <img src="images/currculum/worklevelG3.png" alt="Grade-3-button" class="G3btn" onClick="chooseGrade('Grade3')" id="hovers-btn">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="worksheet-proper">
+        <img src="" alt="Grade-Level-Tag" id="img-tag-worksheet">
+        <div id="title-worksheet">
+            LESSON TITLE
+        </div>
+        <img src="" alt="previous-button-file" id="file-previous-button" onclick="previousFile()">
+        <div class="preview-block">
+
+            <img src="" alt="" id="image-preview">
+
+            <div class="preview-block-buttons">
+                <img src="" alt="image-previous-button" id="image-prev-button" onclick="previousImage()">
+                <img src="" alt="in-between-button" class="inbetween-button">
+                <img src="" alt="image-next-button" id="image-next-button" onclick="nextImage()">
+            </div>
+        </div>
+        <div id="worksheet-description">
+            Worksheet Description here
+        </div>
+        <img src="" alt="download-button" id="worksheet-download-button" onclick="downloadPDF()">
+        <img src="" alt="next-button-file" id="file-next-button" onclick="nextFile()">
+    </div>
+
+    <footer>
+        <div class="bottom-menu">
+            <a href="GamesOption.html"><label>Games</label></a>
+            <a href="Curriculum.html"><label>Curriculum</label></a>
+            <a href="Worksheets.html"><label>Worksheets</label></a>
+            <a href="AboutUs.html"><label>About Us</label></a>
+            <a href="Feedback.html"><label>Feedback</label></a>
+        </div>
+
+        <div class="copyright-curriculum-worksheet">
+            <p class="copyright-text-curriculum-worksheet">
+                Copyrights Reserved 2020
+            </p>
+        </div>
+
+        <div class="prima-curriculum-worksheet">
+            <img src="images/worksheets/primafooter.png" alt="PriMa-Games-Name-Logo" class="footerprima-curriculum-worksheet">
+        </div>
+
+    </footer>
+</body>
+
+</html>
