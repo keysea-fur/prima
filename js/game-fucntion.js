@@ -25,11 +25,11 @@ function appearTheme() { //Appear Theme that Have been chosen by the user
 
             if (gradeTopic == "Count") {
                 holdObjectGame = "Count/"
-                document.getElementById('image-move').style.backgroundImage = `url('images/${holdGame}/${holdObjectGame}/start.gif')`;
+                document.getElementById('image-move').style.backgroundImage = `url('${holdGame}/${holdObjectGame}/start.gif')`;
                 pressStart = 3000;
             } else {
                 holdObjectGame = "rocket";
-                document.getElementById('image-move').style.backgroundImage = `url('images/${holdGame}/start.gif')`;
+                document.getElementById('image-move').style.backgroundImage = `url('${holdGame}/start.gif')`;
                 pressStart = 6000;
             }
             appearStartButton('button-start-reset'); // for fading in of start btn
@@ -46,11 +46,11 @@ function appearTheme() { //Appear Theme that Have been chosen by the user
 
             if (gradeTopic == "Count") {
                 holdObjectGame = "Count/"
-                document.getElementById('image-move').style.backgroundImage = `url('images/${holdGame}/${holdObjectGame}/start.gif')`;
+                document.getElementById('image-move').style.backgroundImage = `url('${holdGame}/${holdObjectGame}/start.gif')`;
                 pressStart = 5000;
             } else {
                 holdObjectGame = "virus";
-                document.getElementById('image-move').style.backgroundImage = `url('images/${holdGame}/start.gif')`;
+                document.getElementById('image-move').style.backgroundImage = `url('${holdGame}/start.gif')`;
                 pressStart = 6000;
             }
             appearStartButton('button-start-reset'); // for fading in of start btn
@@ -67,11 +67,11 @@ function appearTheme() { //Appear Theme that Have been chosen by the user
 
             if (gradeTopic == "Count") {
                 holdObjectGame = "Count/"
-                document.getElementById('image-move').style.backgroundImage = `url('images/${holdGame}/${holdObjectGame}/start.gif')`;
+                document.getElementById('image-move').style.backgroundImage = `url('${holdGame}/${holdObjectGame}/start.gif')`;
                 pressStart = 7000;
             } else {
                 holdObjectGame = "cat";
-                document.getElementById('image-move').style.backgroundImage = `url('images/${holdGame}/start.gif')`;
+                document.getElementById('image-move').style.backgroundImage = `url('${holdGame}/start.gif')`;
                 pressStart = 9000;
             }
             appearStartButton('button-start-reset'); // for fading in of start btn
@@ -84,7 +84,7 @@ function appearTheme() { //Appear Theme that Have been chosen by the user
 
 function appearStartButton(Id) { //countdown of gif then start button wil appear
     setTimeout(function() {
-        document.getElementById('button-start-reset').style.backgroundImage = `url('images/${holdGame}/startbtn.png')`; //changes background of button
+        document.getElementById('button-start-reset').style.backgroundImage = `url('${holdGame}/startbtn.png')`; //changes background of button
         changeImage(5); //changing image after countdown of the gif
         Enable = true; //for not enabling the start button to generate the game
     }, pressStart); // seconds
@@ -96,12 +96,12 @@ document.getElementById('game-sound').onclick = function() { //for Background Mu
         backgroundMusic.muted = false;
         backgroundMusic.loop = true;
         backgroundMusic.play();
-        document.getElementById('game-sound').style.backgroundImage = "url('images/games/soundbtn.png')";
+        document.getElementById('game-sound').style.backgroundImage = "url('games/soundbtn.png')";
 
         checkPlayingMusic = true;
     } else {
         backgroundMusic.muted = true;
-        document.getElementById('game-sound').style.backgroundImage = "url('images/games/soundmutebtn.png')";
+        document.getElementById('game-sound').style.backgroundImage = "url('games/soundmutebtn.png')";
         checkPlayingMusic = false;
     }
 }
@@ -186,7 +186,7 @@ function startCountdown() { // starts coundown and stop on currenttime value
 
             play = false;
             refreshPanel = true;
-            document.getElementById('button-start-reset').style.backgroundImage = `url('images/${holdGame}/tryagainbtn.png')`;
+            document.getElementById('button-start-reset').style.backgroundImage = `url('${holdGame}/tryagainbtn.png')`;
 
             changeImage(6); //game over displayed gif
 
@@ -256,7 +256,7 @@ function boxButtonChecker(num) { // for every box that is selected
 
             play = false;
             refreshPanel = true;
-            document.getElementById('button-start-reset').style.backgroundImage = "url('images/" + holdGame + "/tryagainbtn.png')";
+            document.getElementById('button-start-reset').style.backgroundImage = "url('holdGame + "/tryagainbtn.png')";
 
             changeImage(6); //game over displayed gif
 
@@ -271,7 +271,7 @@ function boxButtonChecker(num) { // for every box that is selected
 function refresh(refreshPanel) { //refreshing the panel after 3 lives and time out
 
     if (refreshPanel === true) {
-        document.getElementById('button-start-reset').style.backgroundImage = `url('images/${holdGame}/startbtn.png')`;
+        document.getElementById('button-start-reset').style.backgroundImage = `url('${holdGame}/startbtn.png')`;
         hide('game-finish');
         show('question');
         location.reload();
@@ -285,7 +285,7 @@ function onloadgif() { //for the smooth play of gif images
 
 function changeImage(imageChangeCount) { //for changing images in the console when correct
     setTimeout(function() {
-        document.getElementById('image-move').style.backgroundImage = `url('images/${holdGame}/${holdObjectGame + imageChangeCount}.gif')`;
+        document.getElementById('image-move').style.backgroundImage = `url('${holdGame}/${holdObjectGame + imageChangeCount}.gif')`;
     }, onloadgif());
 
 }
