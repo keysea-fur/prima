@@ -1,0 +1,340 @@
+body {
+    margin: 0;
+    background-size: 96rem 50rem;
+    background-repeat: no-repeat;
+}
+
+* {
+    outline: none;
+    user-select: none;
+}
+
+@font-face {
+    font-family: SuperMario;
+    src: url("C:\\Users\\CZA\\Desktop\\PriMa\\fonts\\SuperMario256.ttf");
+}
+
+@font-face {
+    font-family: Pixel;
+    src: url("C:\\Users\\CZA\\Desktop\\PriMa\\fonts\\pixel font-7.ttf");
+}
+
+.logo {
+    width: 300px;
+    height: 190px;
+    display: inline-block;
+    padding-left: 50px;
+}
+
+.img-logo {
+    width: 250px;
+    height: 190px;
+}
+
+.homepage-btns {
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    margin-left: 30px;
+}
+
+.div-games-curr {
+    display: inline-block;
+    width: 260px;
+    height: 30px;
+}
+
+.btn-align-web-page {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    width: 250px;
+    height: 52px;
+}
+
+.btn-align-web-page:hover {
+    opacity: 0.4;
+}
+
+.work {
+    display: inline-block;
+    width: 220px;
+    height: 0px;
+}
+
+#workbtn {
+    padding-left: 10px;
+}
+
+#no-hover-gamesbtn {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 250px;
+    height: 52px;
+    padding-left: 10px;
+}
+
+.container {
+    position: absolute;
+    top: 120px;
+    left: 390px;
+}
+
+.console-img {
+    height: 620px;
+}
+
+.upper-console-set-up {
+    width: 745px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 10px;
+    left: 10px;
+}
+
+#image-move {
+    height: 240px;
+    background-size: 745px 240px;
+    border-radius: 10px;
+}
+
+#top-settings {
+    height: 50px;
+}
+
+.upper-settings-left {
+    width: 65px;
+    height: 60px;
+    margin-top: 5px;
+    display: inline-block;
+    background-size: 65px 60px;
+}
+
+#game-sound {
+    margin-left: 8px;
+    background-image: url("C:\\Users\\CZA\\Desktop\\PriMa\\images\\games\\soundmutebtn.png");
+}
+
+#how-to-play {
+    background-image: url("C:\\Users\\CZA\\Desktop\\PriMa\\images\\games\\howtoplay.png");
+    position: absolute;
+    left: 65px;
+}
+
+.lives {
+    width: 55px;
+    height: 60px;
+    display: inline-block;
+    background-size: 55px 60px;
+    margin-top: 5px;
+    position: absolute;
+}
+
+#live3 {
+    margin-right: 10px;
+    right: 0;
+}
+
+#live2 {
+    margin-top: 5px;
+    right: 60px;
+}
+
+#live1 {
+    margin-top: 5px;
+    right: 110px;
+}
+
+#score-board {
+    width: 50px;
+    height: 30px;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    padding: 5px;
+    bottom: 230px;
+    right: 70px;
+}
+
+#current-score-value {
+    font-family: SuperMario;
+    text-align: center;
+    font-size: 30px;
+}
+
+.signal-correct-wrong {
+    position: absolute;
+    padding: 20px;
+    border-radius: 50px;
+    border: 8px solid #363636;
+    bottom: 270px;
+    left: 90px;
+    display: none;
+}
+
+#correct {
+    background-color: chartreuse;
+}
+
+#wrong {
+    background-color: red;
+}
+
+#question {
+    width: 400px;
+    height: 150px;
+    color: #fff;
+    text-align: center;
+    font-family: Pixel;
+    line-height: 130px;
+    font-size: 93px;
+    position: absolute;
+    top: 320px;
+    left: 190px;
+    word-wrap: break-word;
+}
+
+#choices {
+    width: 600px;
+    height: 100px;
+    position: absolute;
+    bottom: 25px;
+    left: 140px;
+}
+
+.box {
+    width: 110px;
+    height: 100px;
+    background-size: 110px 100px;
+    float: left;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    font-family: tw cen mt;
+    color: #fff;
+    font-size: 35px;
+}
+
+.box:hover,
+#button-start-reset:hover {
+    opacity: 0.5;
+}
+
+#box2 {
+    left: 130px;
+}
+
+#box3 {
+    right: 230px;
+}
+
+#box4 {
+    right: 100px;
+    margin-right: 0px;
+}
+
+#button-start-reset {
+    width: 100px;
+    height: 100px;
+    background-size: 120px 120px;
+    background-repeat: no-repeat;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 143px;
+    left: 33px;
+}
+
+#button-start-reset:active {
+    bottom: 145px;
+}
+
+#instruction-game {
+    width: 700px;
+    position: absolute;
+    top: 75px;
+    left: 25px;
+    border-radius: 30px;
+    border: #3d3d3c solid 10px;
+    display: none;
+}
+
+#time {
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    bottom: 135px;
+    right: 96px;
+    color: #fff;
+    font-family: SuperMario;
+    font-size: 30px;
+    text-align: center;
+    display: none;
+}
+
+#game-finish {
+    height: 200px;
+    width: 700px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-family: SuperMario;
+    font-size: 60px;
+    -webkit-text-stroke: 2px #363636;
+    text-align: center;
+    display: none;
+}
+
+#try-again {
+    background-color: burlywood;
+    width: 78px;
+    padding: 10px;
+    background-color: brown;
+    margin: 0 auto;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+
+#try-again:active {
+    box-shadow: 0px 0px 0px 0px black;
+    top: 4px;
+}
+
+footer {
+    height: 35px;
+    position: absolute;
+    bottom: 0;
+}
+
+.bottom-menu {
+    display: inline;
+    padding-left: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+label:hover {
+    text-decoration: underline;
+}
+
+label {
+    font-family: tw cen mt;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.prima {
+    display: inline-block;
+    position: absolute;
+    left: 1400px;
+}
+
+.footerprima {
+    width: 120px;
+    height: 30px;
+}

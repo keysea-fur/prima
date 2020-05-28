@@ -1,0 +1,656 @@
+body {
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    background-size: 93rem 48rem;
+}
+
+.feedback-body {
+    background-image: url('C:\\Users\\CZA\\Desktop\\PriMa\\images\\Feedback\\FeedbackBG.png');
+    background-size: 55rem 48rem;
+}
+
+.about-us-body {
+    background-image: url('C:\\Users\\CZA\\Desktop\\PriMa\\images\\About Us\\aboutUsBG.png');
+    background-position: center bottom;
+    background-size: 90rem 40rem;
+}
+
+* {
+    outline: none;
+    user-select: none;
+}
+
+@font-face {
+    font-family: LemonMilk;
+    src: url("C:\\Users\\CZA\\Desktop\\PriMa\\fonts\\LemonMilk.otf");
+}
+
+@font-face {
+    font-family: SuperMario;
+    src: url("C:\\Users\\CZA\\Desktop\\PriMa\\fonts\\SuperMario256.ttf");
+}
+
+.logo {
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    padding-left: 50px;
+}
+
+.img-logo {
+    width: 200px;
+    height: 170px;
+}
+
+.homepage-btns {
+    display: inline-block;
+    position: absolute;
+    width: 800px;
+    top: 50px;
+    margin-left: 30px;
+}
+
+.games,
+.curr,
+.work {
+    display: inline-block;
+    width: 260px;
+    height: 30px;
+}
+
+.gamesbtn,
+.currbtn,
+.workbtn,
+.currbtn,
+.workbtn {
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 250px;
+    height: 52px;
+}
+
+#currbtn {
+    padding-left: 12px;
+}
+
+.opening-text-content {
+    width: 700px;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 150px;
+    margin-left: 10px;
+}
+
+.welcome {
+    font-family: LemonMilk;
+    color: #162b61;
+    font-size: 60px;
+    line-height: 50px;
+}
+
+.WelcomeDesc {
+    font-family: tw cen mt;
+    color: #162b61;
+    font-size: 25px;
+}
+
+.learn {
+    margin-top: 40px;
+}
+
+.learnbtn {
+    width: 250px;
+    height: 52px;
+}
+
+a {
+    color: #162b61;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#image-preview {
+    transition: transform .2s;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#image-preview:hover {
+    transform: scale(1.65);
+}
+
+#hovers-btn:hover,
+#button-download-curriculum:hover,
+#worksheet-download-button:hover,
+#file-previous-button:hover,
+#image-prev-button:hover,
+#image-next-button:hover,
+#file-next-button:hover,
+.play-logo:hover,
+button:hover {
+    opacity: 0.4;
+}
+
+.Levels,
+.Topic_G2_G3 {
+    width: 500px;
+    margin-left: 160px;
+    margin-bottom: 30px;
+}
+
+.Topic_KG1 {
+    width: 900px;
+    margin-left: 35px;
+    margin-bottom: 30px;
+    padding-bottom: 190px;
+}
+
+.chooselbl {
+    width: 300px;
+    height: 40px;
+}
+
+.choose {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.choosetop {
+    padding-left: 210px;
+    padding-right: 210px;
+    padding-top: 20px;
+}
+
+.Kbtn {
+    width: 230px;
+    height: 210px;
+}
+
+.LevelK,
+.Level2,
+.Level1,
+.Level3 {
+    padding-bottom: 10px;
+}
+
+.Topic1,
+.Topic2 {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.Topic3 {
+    display: inline-block;
+}
+
+.G1btn,
+.G2btn,
+.G3btn,
+.CountBtn,
+.AdditionBtn,
+.MultiplyBtn,
+.SubtractionBtn,
+.DivisionBtn {
+    width: 230px;
+    height: 210px;
+}
+
+.row1,
+.row2 {
+    display: inline-block;
+    padding-top: 15px;
+}
+
+.row2 {
+    margin-left: 20px;
+}
+
+.row3 {
+    display: inline-block;
+    padding-top: 40px;
+}
+
+.gamesbg {
+    width: 1450px;
+    height: 550px;
+}
+
+.BgGames {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.play-btns {
+    position: absolute;
+    top: 590px;
+    left: 355px;
+}
+
+.play {
+    width: 200px;
+    height: 40px;
+    margin-right: 100px;
+    display: inline-block;
+}
+
+.play-logo {
+    width: 240px;
+    height: 45px;
+}
+
+.posters {
+    position: absolute;
+    top: 250px;
+    left: 328px;
+}
+
+.picture-poster {
+    width: 280px;
+    height: 300px;
+    margin-right: 23px;
+}
+
+form.feedback-content {
+    width: 600px;
+    height: 550px;
+    margin-left: 100px;
+    position: relative;
+}
+
+h1.feedback-title {
+    font-family: SuperMario;
+    font-size: 40px;
+    color: #0e6188;
+    margin: 0;
+    margin-right: 250px;
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.feedback-label-content {
+    width: 150px;
+    height: 400px;
+    text-align: end;
+    display: inline-block;
+}
+
+.feedback-labels,
+.feedback-labels-last {
+    color: #0e6188;
+    font-size: 20px;
+    padding-right: 10px;
+    line-height: 60px;
+}
+
+.feedback-labels-last {
+    line-height: 20px;
+}
+
+.feedback-input-content {
+    width: 450px;
+    position: absolute;
+    top: 80px;
+    display: inline-block;
+}
+
+.feedback-textarea-text {
+    height: 200px;
+}
+
+.feedback-input-text {
+    height: 30px;
+}
+
+.feedback-input-text,
+.feedback-textarea-text {
+    width: 400px;
+    border: 2px solid #0e6188;
+    border-radius: 10px;
+    font-family: Arial;
+    font-size: larger;
+    padding: 5px;
+    margin: 8px;
+}
+
+button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url('C:\\Users\\CZA\\Desktop\\PriMa\\images\\Feedback\\send.png');
+    background-size: 180px 50px;
+    border: none;
+    position: absolute;
+    bottom: 60px;
+    right: 30px;
+    width: 180px;
+    height: 50px;
+}
+
+.about-container {
+    margin-left: 120px;
+    width: 700px;
+}
+
+.about-header {
+    margin: 10px;
+}
+
+.about-games,
+.about-span {
+    font-family: LemonMilk;
+}
+
+.about-span {
+    font-weight: lighter;
+    color: white;
+}
+
+.about-games {
+    font-weight: 900;
+    color: #162b61;
+    -webkit-text-stroke: 0.5px white;
+}
+
+.about-pri,
+.about-ma {
+    font-size: larger;
+    font-family: SuperMario;
+    -webkit-text-stroke: 2.5px #162b61;
+}
+
+.about-pri {
+    color: #e8b100;
+}
+
+.about-ma {
+    color: #ab1866;
+}
+
+.content-references,
+.content-about-us {
+    font-family: tw cen mt;
+    color: white;
+}
+
+.content-about-us {
+    text-justify: inter-word;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.content-references {
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    width: 270px;
+    text-align: center;
+}
+
+.references-sites {
+    width: 450px;
+    height: 180px;
+    position: absolute;
+    bottom: 50px;
+    left: 400px;
+}
+
+.box-ref-option {
+    padding-top: 30px;
+    width: 140px;
+}
+
+#references-sources {
+    width: 200px;
+    position: absolute;
+    left: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 30px;
+    font-family: Tw Cen MT;
+    color: #545454;
+    text-align: center;
+    display: none;
+}
+
+#image-container {
+    width: 340px;
+    position: absolute;
+    top: 280px;
+    right: 178px;
+}
+
+.image-about-crators {
+    width: 335px;
+    height: 210px;
+    border-radius: 15px;
+}
+
+footer {
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+}
+
+.bottom-menu {
+    display: inline;
+    padding-left: 30px;
+    position: absolute;
+    top: 10px;
+}
+
+.footer-games {
+    height: 20px;
+    position: relative;
+}
+
+.bottom-menu-games,
+.bottom-menu-feedback {
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    padding-left: 30px;
+}
+
+.bottom-menu-feedback {
+    width: 400px;
+}
+
+label {
+    font-family: tw cen mt;
+}
+
+.copyright {
+    display: inline;
+    padding-left: 900px;
+    position: relative;
+}
+
+.copyright-text {
+    font-family: tw cen mt;
+    color: aliceblue;
+    display: inline;
+    position: absolute;
+    right: 0px;
+    top: 0;
+}
+
+.copyright-games {
+    display: inline-block;
+    padding-left: 700px;
+    position: relative;
+}
+
+.copyright-curriculum-worksheet {
+    display: inline;
+    padding-left: 880px;
+    position: relative;
+}
+
+.copyright-text-curriculum-worksheet {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.copyright-text-games,
+.copyright-text-curriculum-worksheet {
+    font-family: tw cen mt;
+    color: #3d216c;
+    display: inline;
+}
+
+.prima,
+.prima-curriculum-worksheet,
+.prima-games {
+    display: inline;
+    position: relative;
+}
+
+.prima {
+    padding-left: 618px;
+}
+
+.prima-curriculum-worksheet,
+.prima-games {
+    padding-left: 634px;
+}
+
+.footerprima,
+.footerprima-curriculum-worksheet,
+.footerprima-games {
+    width: 130px;
+    height: 30px;
+    position: absolute;
+    right: 0px;
+}
+
+.footerprima,
+.footerprima-games {
+    top: 5px;
+}
+
+.footerprima-curriculum-worksheet {
+    top: 10px;
+}
+
+.curriculum-proper {
+    width: 630px;
+    height: 450px;
+    position: absolute;
+    top: 190px;
+    left: 70px;
+    display: none;
+}
+
+#image-tag-curriculum,
+#img-tag-worksheet {
+    width: 260px;
+}
+
+#button-download-curriculum {
+    width: 300px;
+    position: absolute;
+    bottom: 0px;
+    left: 180px;
+}
+
+#description-curriculum {
+    width: 620px;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 10px;
+    color: #3d3d3c;
+    font-family: tw cen mt;
+    font-size: 25px;
+    text-justify: inter-word;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.worksheet-proper {
+    width: 780px;
+    height: 500px;
+    position: absolute;
+    top: 180px;
+    left: 20px;
+    display: none;
+}
+
+#img-tag-worksheet {
+    margin-left: 50px;
+}
+
+#title-worksheet {
+    width: 700px;
+    font-family: LemonMilk;
+    font-size: 30px;
+    margin-left: 60px;
+}
+
+#file-previous-button,
+#file-next-button {
+    height: 50px;
+    position: absolute;
+    top: 250px;
+}
+
+#file-previous-button {
+    left: 0px;
+}
+
+#file-next-button {
+    right: 0px;
+}
+
+.preview-block {
+    width: 330px;
+    height: 310px;
+    position: absolute;
+    top: 120px;
+    left: 60px;
+    background-color: #545454;
+}
+
+.preview-block-buttons {
+    width: 130px;
+    position: absolute;
+    bottom: 20px;
+    left: 100px;
+}
+
+.inbetween-button,
+#image-next-button,
+#image-prev-button {
+    width: 40px;
+}
+
+#worksheet-description {
+    width: 300px;
+    height: 200px;
+    color: #3d3d3c;
+    font-family: tw cen mt;
+    font-size: 20px;
+    position: absolute;
+    top: 150px;
+    right: 80px;
+    text-justify: inter-word;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+#worksheet-download-button {
+    width: 230px;
+    position: absolute;
+    bottom: 90px;
+    right: 120px;
+}
